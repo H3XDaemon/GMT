@@ -8,4 +8,5 @@ Move-Item -Path C:\GMT軟體\programs -Destination C:\programs
     "Path",
     [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";C:\programs\gmt\bin",
     [EnvironmentVariableTarget]::User)
+
 Invoke-WebRequest -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/1027.bat" -OutFile "1027.bat"
