@@ -3,7 +3,7 @@
 Move-Item -Path C:\GMT軟體\gs -Destination C:\gs
 Move-Item -Path C:\GMT軟體\programs -Destination C:\programs
 Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/1027.bat" -OutFile "D:\1027.bat"
-start-process "cmd.exe" "/c D:\1027.bat"
+Start-Process -FilePath 'D:\1027.bat' -NoNewWindow
 
 [Environment]::SetEnvironmentVariable(
     "Path",
