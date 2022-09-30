@@ -13,6 +13,6 @@ Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/102
     [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";C:\programs\gmt\bin",
     [EnvironmentVariableTarget]::User)
 
-start-process "cmd.exe" "/c D:1027.bat"
+start-process "cmd.exe" "/c D:\1027.bat"
 
 
