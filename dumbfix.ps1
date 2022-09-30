@@ -1,6 +1,6 @@
 Move-Item -Path C:\GMT軟體\gs -Destination C:\gs
 Move-Item -Path C:\GMT軟體\programs -Destination C:\programs
-Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/1027.bat" -OutFile "D:\1027.bat"
+Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/gmtest.bat" -OutFile "D:\gmtest.bat"
 
 [Environment]::SetEnvironmentVariable(
     "Path",
@@ -11,7 +11,7 @@ Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/102
     [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";C:\programs\gmt\bin",
     [EnvironmentVariableTarget]::User)
 
-Start-Process -FilePath "D:\1027.bat"
+Start-Process -FilePath "D:\gmtest.bat"
 
 
 
