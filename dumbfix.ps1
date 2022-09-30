@@ -1,6 +1,6 @@
 Move-Item -Path C:\GMT軟體\gs -Destination C:\gs
 Move-Item -Path C:\GMT軟體\programs -Destination C:\programs
-Invoke-WebRequest -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/1027.bat" -OutFile "D:\1027.bat"
+Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/1027.bat" -OutFile "D:\1027.bat"
 
 [Environment]::SetEnvironmentVariable(
     "Path",
