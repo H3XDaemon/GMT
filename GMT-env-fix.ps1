@@ -11,5 +11,5 @@ Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/gmt
     [Environment]::GetEnvironmentVariable("Path", [EnvironmentVariableTarget]::User) + ";C:\programs\gmt\bin",
     [EnvironmentVariableTarget]::User)
 
+Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/GMT-env-fix.ps1" -OutFile "D:\GMT-env-fix.ps1"
 Start-Process -FilePath "D:\gmtest.bat"
-Invoke-WebRequest -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/GMT-env-fix.ps1" -OutFile "D:\GMT-env-fix.ps1"
