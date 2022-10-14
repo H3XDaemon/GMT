@@ -10,5 +10,5 @@
 Move-Item -Path C:\GMT軟體\gs -Destination C:\gs
 Move-Item -Path C:\GMT軟體\programs -Destination C:\programs
 Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/gmtest.bat" -OutFile "D:\gmtest.bat"
-Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/GMT-env-fix.ps1" -OutFile "D:\GMT-env-fix.ps1"
+Invoke-RestMethod -URI "https://raw.githubusercontent.com/H3XDaemon/GMT/main/GMT-env-fix.ps1" -OutFile "D:\GMT-env-fix.bat"
 Start-Process "cmd.exe" "/c D:gmtest.bat"
